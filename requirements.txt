@@ -1,0 +1,8 @@
+streamlit==1.29.0
+plotly==5.18.0
+pymongo==4.6.1
+mysql-connector-python==8.2.0
+requests==2.31.0
+python-dotenv==1.0.0
+pytz==2023.3.post1
+pandas==2.1.4
