@@ -47,10 +47,14 @@ def update_weather_records():
         print(f"Data inserted for {city}")
 
 if __name__ == '__main__':
-    while True:
-        try:
-            update_weather_records()
-            print(f"Updated all cities at {datetime.now().isoformat()}")
-        except Exception as e:
-            print(f"Error: {e}")
-        time.sleep(600)  # Sleep for 15 minutes
+    try:
+        print("Starting weather data mining...")
+        while True:
+            try:
+                update_weather_records()
+                print(f"Updated all cities at {datetime.now().isoformat()}")
+            except Exception as e:
+                print(f"Error: {e}")
+            time.sleep(600)  # Sleep for 10 minutes
+    except KeyboardInterrupt:
+        print("\nMining session ended")
